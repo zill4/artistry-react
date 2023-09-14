@@ -1,6 +1,5 @@
 const path = require('path');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
@@ -49,9 +48,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: 'examples/html/index.html'
-        }),
     ],
     devServer: {
         contentBase: path.join(__dirname, 'build'),

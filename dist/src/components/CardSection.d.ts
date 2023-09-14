@@ -1,0 +1,10 @@
+import * as React from 'react';
+export interface ICardSectionProps {
+    id?: string;
+    className?: string;
+    multiColumn?: boolean;
+    centered?: boolean;
+}
+export default class CardSection extends React.Component<ICardSectionProps, any> {
+    render(): JSX.Element;
+}

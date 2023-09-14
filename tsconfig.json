@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "commonjs",
+    "module": "commonJS",
     "moduleResolution": "node",
     "isolatedModules": false,
     "jsx": "react",
@@ -14,11 +14,11 @@
     "removeComments": true,
     "noLib": false,
     "preserveConstEnums": true,
-    "suppressImplicitAnyIndexErrors": true,
+    // "suppressImplicitAnyIndexErrors": true,
     "outDir": "dist",
     "baseUrl": "./src",
     "paths": {
-      "@artistry-react": [
+      "artistry-react": [
         "scripts/modules/ArtistryReact"
       ]
     },
