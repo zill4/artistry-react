@@ -1,4 +1,4 @@
-import Diff, { IDiffItem, DiffOperation } from '@cascade/diff';
+import Diff, { IDiffItem, DiffOperation } from 'cascade-diff';
 
 export enum UnitValid {
     valid = 1,
