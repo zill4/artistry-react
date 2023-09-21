@@ -61,25 +61,25 @@ class Carousel extends React.Component {
             let node;
             if (!this.props.staticHeight) {
                 node = this.container.current;
-                await PromiseUtil_1.setState({ height: node.offsetHeight + 'px' }, this);
+                await (0, PromiseUtil_1.setState)({ height: node.offsetHeight + 'px' }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
             }
-            await PromiseUtil_1.setState({ animating: true }, this);
+            await (0, PromiseUtil_1.setState)({ animating: true }, this);
             if (runCount !== this.runCount) {
                 return;
             }
-            await PromiseUtil_1.setState({
+            await (0, PromiseUtil_1.setState)({
                 activeIndex: activeIndex,
                 previousActiveIndex: previousActiveIndex,
                 selected: false
             }, this);
-            await PromiseUtil_1.waitAnimation(1);
+            await (0, PromiseUtil_1.waitAnimation)(1);
             if (runCount !== this.runCount) {
                 return;
             }
-            await PromiseUtil_1.setState({ selected: true }, this);
+            await (0, PromiseUtil_1.setState)({ selected: true }, this);
             if (runCount !== this.runCount) {
                 return;
             }
@@ -91,7 +91,7 @@ class Carousel extends React.Component {
                     parseFloat(computedStyle.getPropertyValue('padding-bottom'));
                 let activeChild = node.querySelector('.carousel-selected');
                 if (activeChild) {
-                    await PromiseUtil_1.setState({ height: paddingHeight + activeChild.clientHeight + 'px' }, this);
+                    await (0, PromiseUtil_1.setState)({ height: paddingHeight + activeChild.clientHeight + 'px' }, this);
                 }
                 if (runCount !== this.runCount) {
                     return;
@@ -99,7 +99,7 @@ class Carousel extends React.Component {
             }
             if (this.running) {
                 if (this.props.staticHeight) {
-                    await PromiseUtil_1.setState({
+                    await (0, PromiseUtil_1.setState)({
                         animating: false,
                         height: undefined,
                         previousActiveIndex: this.state.activeIndex

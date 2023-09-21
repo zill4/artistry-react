@@ -39,5 +39,5 @@ export default class Button extends React.Component<IButtonProps, any> {
     componentWillMount(): void;
     componentWillReceiveProps(nextProps: IButtonProps): void;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

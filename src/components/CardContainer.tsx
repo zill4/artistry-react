@@ -6,6 +6,7 @@ export interface ICardContainerProps {
     space?: boolean;
     minWidth?: number | string;
     maxWidth?: number | string;
+    children?: React.ReactNode;
 }
 
 export default class CardContainer extends React.Component<ICardContainerProps, any> {

@@ -5,5 +5,5 @@ export interface ISpacerProps {
     list?: boolean;
 }
 export default class Spacer extends React.Component<ISpacerProps, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ITemplate } from './ITemplate';
-export declare type SearchSize = 'default' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large';
+export type SearchSize = 'default' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large';
 export interface ISearchProps {
     id?: string;
     className?: string;
@@ -62,5 +62,5 @@ export default class Search extends React.Component<ISearchProps, ISearchState> 
     componentWillMount(): void;
     componentWillReceiveProps(nextProps: ISearchProps): void;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

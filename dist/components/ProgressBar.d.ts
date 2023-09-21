@@ -1,5 +1,5 @@
 import * as React from 'react';
-export declare type ProgressBarType = 'default' | 'success' | 'info' | 'warning' | 'danger';
+export type ProgressBarType = 'default' | 'success' | 'info' | 'warning' | 'danger';
 export interface IProgressBarProps {
     id?: string;
     className?: string;
@@ -10,7 +10,8 @@ export interface IProgressBarProps {
     decimal?: number;
     decimalFixed?: boolean;
     type?: ProgressBarType;
+    children?: React.ReactNode;
 }
 export default class ProgressBar extends React.Component<IProgressBarProps, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

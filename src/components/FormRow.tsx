@@ -8,6 +8,7 @@ export interface IFormRowProps {
     className?: string;
     id?: string;
     screenSize?: FormRowSize;
+    children?: React.ReactNode;
 }
 
 export default class FormRow extends React.Component<IFormRowProps, any>{

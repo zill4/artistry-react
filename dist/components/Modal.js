@@ -72,8 +72,8 @@ class Modal extends React.Component {
                 }
                 this.updateModalRoot();
                 BodyScroll_1.default.lock(true);
-                await PromiseUtil_1.waitAnimation();
-                await PromiseUtil_1.waitAnimation();
+                await (0, PromiseUtil_1.waitAnimation)();
+                await (0, PromiseUtil_1.waitAnimation)();
                 this.setState({
                     open: this.props.open
                 });
@@ -165,7 +165,7 @@ class Modal extends React.Component {
             }
         }
         if (this.props.grid) {
-            Grid_1.gridConfig(modalContentClassNames, this.props);
+            (0, Grid_1.gridConfig)(modalContentClassNames, this.props);
         }
         let headerSection;
         if (title || header || closeable) {

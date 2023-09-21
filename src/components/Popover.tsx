@@ -10,6 +10,7 @@ export interface IPopoverProps {
     closed?: boolean;
     preventClick?: boolean;
     space?: boolean;
+    children?: React.ReactNode;
 }
 
 export default class Popover extends React.Component<IPopoverProps, any> {

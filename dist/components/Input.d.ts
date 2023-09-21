@@ -5,5 +5,5 @@ export interface IInputProps extends React.HTMLProps<HTMLInputElement> {
     displaySize?: 'default' | 'small' | 'large';
 }
 export default class Input extends React.Component<IInputProps, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

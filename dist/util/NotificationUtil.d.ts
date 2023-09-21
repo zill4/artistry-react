@@ -1,5 +1,5 @@
 import BaseEventTarget from './BaseEventTarget';
-export declare type NotificationType = 'default' | 'success' | 'info' | 'warning' | 'danger';
+export type NotificationType = 'default' | 'success' | 'info' | 'warning' | 'danger';
 export interface INotification {
     type?: NotificationType;
     title?: string;

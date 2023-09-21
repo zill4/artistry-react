@@ -3,6 +3,7 @@ export interface ICloseableProps {
     id?: string;
     className?: string;
     closed?: boolean;
+    children?: React.ReactNode;
 }
 export interface ICloseableState {
     closed?: boolean;
@@ -17,5 +18,5 @@ export default class Closeable extends React.Component<ICloseableProps, ICloseab
     transitionEnd: (event: React.TransitionEvent<HTMLDivElement>) => Promise<void>;
     componentWillReceiveProps(nextProps: ICloseableProps): Promise<void>;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

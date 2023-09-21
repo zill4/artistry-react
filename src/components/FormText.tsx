@@ -11,6 +11,7 @@ export interface IFormTextProps {
     fill?: boolean;
     theme?: FormTextTheme;
     align?: AlignType;
+    children?: React.ReactNode;
 }
 
 export default class FormText extends React.Component<IFormTextProps, any>{

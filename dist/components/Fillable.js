@@ -22,7 +22,7 @@ class Fillable extends React.Component {
             let runCount = this.runCount;
             if (!nextProps.filled) {
                 let rect = node.getBoundingClientRect();
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     top: rect.top + 'px',
                     bottom: window.innerHeight - rect.top - rect.height + 'px',
                     left: rect.left + 'px',
@@ -31,11 +31,11 @@ class Fillable extends React.Component {
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.waitAnimation(220);
+                await (0, PromiseUtil_1.waitAnimation)(220);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: undefined,
                     width: undefined,
                     top: undefined,
@@ -51,7 +51,7 @@ class Fillable extends React.Component {
             }
             else {
                 let rect = node.getBoundingClientRect();
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: rect.height + 'px',
                     width: rect.width + 'px',
                     top: rect.top + 'px',
@@ -63,11 +63,11 @@ class Fillable extends React.Component {
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.waitAnimation(220);
+                await (0, PromiseUtil_1.waitAnimation)(220);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     top: 0 + 'px',
                     right: 0 + 'px',
                     bottom: 0 + 'px',

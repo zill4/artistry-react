@@ -1,5 +1,5 @@
 import * as React from 'react';
-export declare type GridSize = 'default' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large';
+export type GridSize = 'default' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large';
 export interface IGridProps {
     className?: string;
     id?: string;
@@ -7,9 +7,10 @@ export interface IGridProps {
     screenSize?: GridSize;
     fillWidth?: boolean;
     space?: boolean;
+    children?: React.ReactNode;
 }
 export default class Grid extends React.Component<IGridProps, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }
 export interface IGridExternalProps {
     grid?: boolean;

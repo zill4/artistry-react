@@ -23,5 +23,5 @@ export interface ITableProps<T> {
     form?: boolean;
 }
 export default class Table<T> extends React.Component<ITableProps<T>, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

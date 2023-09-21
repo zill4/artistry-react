@@ -53,6 +53,7 @@ export interface IScrollableProps {
     onBottomExit?: (entries: IntersectionObserverEntry, observer: IntersectionObserver) => any;
     onLeftEnter?: (entries: IntersectionObserverEntry, observer: IntersectionObserver) => any;
     onLeftExit?: (entries: IntersectionObserverEntry, observer: IntersectionObserver) => any;
+    children?: React.ReactNode;
 }
 
 export default class Scrollable extends React.Component<IScrollableProps, any> {

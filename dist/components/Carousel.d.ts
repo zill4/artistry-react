@@ -10,6 +10,7 @@ export interface ICarouselProps {
     fillHeight?: boolean;
     scroll?: ScrollableType;
     space?: boolean;
+    children?: React.ReactNode;
 }
 export interface ICarouselState {
     height?: string;
@@ -27,5 +28,5 @@ export default class Carousel extends React.Component<ICarouselProps, ICarouselS
     transitionEnd: (event: React.TransitionEvent<HTMLElement>) => Promise<void>;
     componentWillReceiveProps(nextProps?: ICarouselProps): Promise<void>;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

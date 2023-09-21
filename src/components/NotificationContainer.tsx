@@ -10,6 +10,7 @@ export interface INotificationContainerProps {
     id?: string;
     className?: string;
     location?: NotificationLocation;
+    children?: React.ReactNode;
 }
 
 export default class NotificationContainer extends React.Component<INotificationContainerProps, any> {

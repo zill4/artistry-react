@@ -7,5 +7,5 @@ export interface ITimeInputProps extends React.HTMLProps<HTMLInputElement> {
 export interface ITimeInputState {
 }
 export default class TimeInput extends React.Component<ITimeInputProps, ITimeInputState> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

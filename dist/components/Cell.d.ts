@@ -8,7 +8,8 @@ export interface ICellProps {
     align?: AlignType;
     width?: number | string;
     leftMargin?: number | string;
+    children?: React.ReactNode;
 }
 export default class Cell extends React.Component<ICellProps, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

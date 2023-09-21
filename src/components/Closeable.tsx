@@ -6,6 +6,7 @@ export interface ICloseableProps {
     id?: string;
     className?: string;
     closed?: boolean;
+    children?: React.ReactNode;
 }
 
 export interface ICloseableState {

@@ -87,11 +87,11 @@ export default class Select<T, U> extends React.Component<ISelectProps<T>> {
                         if (valueProp) {
                             let optionValue = option[valueProp];
                             return (
-                                <option key={optionValue as any} value={optionValue as any}>{optionValue}</option>
+                                <option key={optionValue as any} value={optionValue as any}>{optionValue as React.ReactNode}</option>
                             );
                         } else {
                             return (
-                                <option key={option as any} value={option as any}>{option}</option>
+                                <option key={option as any} value={option as any}>{option as React.ReactNode}</option>
                             );
                         }
                     })}

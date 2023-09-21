@@ -6,6 +6,7 @@ export interface ICardCarouselProps extends ICarouselProps {
     cardSpacing?: number;
     carouselSpacing?: number;
     onChangeSize?: (index: number, slideSize?: number, oldSlideSize?: number) => any;
+    children?: React.ReactNode;
 }
 export interface ICardCarouselState {
     rendered?: boolean;
@@ -19,5 +20,5 @@ export default class CardCarousel extends React.Component<ICardCarouselProps, IC
     onChangeSize: (slideSize: number, oldSlideSize: number) => void;
     resizeHandler: () => void;
     componentDidUpdate(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

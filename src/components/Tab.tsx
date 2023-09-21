@@ -16,6 +16,7 @@ export interface ITabProps {
     staticHeight?: boolean;
     fillHeight?: boolean;
     scroll?: ScrollableType;
+    children?: React.ReactNode;
 }
 
 export interface ITabState {

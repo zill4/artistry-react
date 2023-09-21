@@ -9,7 +9,7 @@ class CardRow extends React.Component {
         let classNames = new ClassNames_1.default(className);
         classNames.add('card-row');
         if (align) {
-            Align_1.alignClass(align, classNames);
+            (0, Align_1.alignClass)(align, classNames);
         }
         return (React.createElement("div", { className: classNames.toString(), id: id }, this.props.children));
     }

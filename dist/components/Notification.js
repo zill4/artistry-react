@@ -14,7 +14,7 @@ class Notification extends React.Component {
             if (this.props.decay) {
                 this.decayCounter++;
                 let decayCounter = this.decayCounter;
-                await PromiseUtil_1.wait(this.props.decay);
+                await (0, PromiseUtil_1.wait)(this.props.decay);
                 if (decayCounter === this.decayCounter) {
                     if (!this.state.hide) {
                         this.setState({

@@ -17,6 +17,7 @@ export interface IDrawerProps extends IGridExternalProps, IScrollableExternalPro
     onClose: (event: React.MouseEvent<HTMLDivElement>) => void;
     background?: boolean;
     space?: boolean;
+    children?: React.ReactNode;
 }
 
 export interface IDrawerState {

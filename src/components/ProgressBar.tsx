@@ -12,6 +12,7 @@ export interface IProgressBarProps {
     decimal?: number;
     decimalFixed?: boolean;
     type?: ProgressBarType;
+    children?: React.ReactNode;
 }
 
 export default class ProgressBar extends React.Component<IProgressBarProps, any> {

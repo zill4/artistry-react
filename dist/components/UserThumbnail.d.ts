@@ -23,5 +23,5 @@ export default class UserThumbnail extends React.Component<IUserThumbnailProps, 
     componentWillReceiveProps(nextProps: IUserThumbnailProps): void;
     componentWillUnmount(): void;
     onClick: (event: React.MouseEvent<HTMLElement>) => void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

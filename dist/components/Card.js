@@ -33,12 +33,12 @@ class Card extends React.Component {
             classNames.push('card-square');
         }
         if (grid) {
-            Grid_1.gridConfig(innerClassNames, this.props);
+            (0, Grid_1.gridConfig)(innerClassNames, this.props);
         }
         if (clickable) {
             classNames.push('clickable');
         }
-        Disabled_1.disabledClass(disabled, classNames);
+        (0, Disabled_1.disabledClass)(disabled, classNames);
         return (React.createElement("div", { className: classNames.join(' '), id: id, onClick: this.onClick },
             header ? React.createElement("header", null, header) : null,
             React.createElement("div", { className: innerClassNames.join(' ') }, this.props.children),

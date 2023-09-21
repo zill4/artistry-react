@@ -1,5 +1,6 @@
 import * as React from 'react';
 export interface IDepthStackInterceptorProps {
+    children?: React.ReactNode;
 }
 export default class DepthStackInterceptor extends React.Component<IDepthStackInterceptorProps, any> {
     rootRef: React.RefObject<HTMLDivElement>;
@@ -9,5 +10,5 @@ export default class DepthStackInterceptor extends React.Component<IDepthStackIn
     onKeyDown: (event: React.KeyboardEvent<HTMLElement>) => void;
     componentDidMount(): void;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

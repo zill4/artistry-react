@@ -8,5 +8,5 @@ export interface ITabTitleProps {
 }
 export default class TabTitle extends React.Component<ITabTitleProps, any> {
     selectPanel: (event: React.MouseEvent<HTMLElement>) => boolean | void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

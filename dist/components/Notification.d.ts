@@ -9,6 +9,7 @@ export interface INotificationProps extends INotification {
     allowDelay?: boolean;
     onClick?: (event: React.MouseEvent<HTMLElement>) => any;
     onClose?: () => any;
+    children?: React.ReactNode;
 }
 export interface INotificationState {
     hide?: boolean;
@@ -20,5 +21,5 @@ export default class Notification extends React.Component<INotificationProps, IN
     startDecay: () => Promise<void>;
     endDecay: (event: React.AnimationEvent) => Promise<void>;
     stopDecay: () => void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

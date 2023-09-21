@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IGridExternalProps } from './Grid';
 import { IScrollableExternalProps } from './Scrollable';
-export declare type ModalSize = 'none' | 'all' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large';
+export type ModalSize = 'none' | 'all' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large';
 export interface IModalProps extends IGridExternalProps, IScrollableExternalProps {
     className?: string;
     id?: string;
@@ -19,6 +19,7 @@ export interface IModalProps extends IGridExternalProps, IScrollableExternalProp
     space?: boolean;
     background?: boolean;
     screenSize?: ModalSize | ModalSize[];
+    children?: React.ReactNode;
 }
 export interface IModalState {
     open?: boolean;

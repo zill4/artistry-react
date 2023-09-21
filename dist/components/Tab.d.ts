@@ -13,6 +13,7 @@ export interface ITabProps {
     staticHeight?: boolean;
     fillHeight?: boolean;
     scroll?: ScrollableType;
+    children?: React.ReactNode;
 }
 export interface ITabState {
     activeIndex: number;
@@ -20,5 +21,5 @@ export interface ITabState {
 export default class Tab extends React.Component<ITabProps, ITabState> {
     constructor(props?: ITabProps);
     selectPanel(index: number): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

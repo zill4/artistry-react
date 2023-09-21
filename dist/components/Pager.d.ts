@@ -17,5 +17,5 @@ export default class Pager extends React.Component<IPagerProps, any> {
     onClickForward: (event: React.MouseEvent<HTMLElement>) => void;
     onClickStart: (event: React.MouseEvent<HTMLElement>) => void;
     onClickEnd: (event: React.MouseEvent<HTMLElement>) => void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

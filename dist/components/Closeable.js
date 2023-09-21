@@ -18,12 +18,12 @@ class Closeable extends React.Component {
                 let animating = this.state.animating;
                 if (!animating) {
                     if (this.state.closed) {
-                        await PromiseUtil_1.setState({
+                        await (0, PromiseUtil_1.setState)({
                             running: false
                         }, this);
                     }
                     else {
-                        await PromiseUtil_1.setState({
+                        await (0, PromiseUtil_1.setState)({
                             height: undefined,
                             running: false
                         }, this);
@@ -37,7 +37,7 @@ class Closeable extends React.Component {
             let node = this.root.current;
             this.runCount++;
             let runCount = this.runCount;
-            await PromiseUtil_1.setState({
+            await (0, PromiseUtil_1.setState)({
                 running: true,
                 animating: true,
             }, this);
@@ -45,50 +45,50 @@ class Closeable extends React.Component {
                 return;
             }
             if (nextProps.closed) {
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: node.offsetHeight + 'px'
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     closed: true
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
                 let border = node.offsetHeight - node.clientHeight;
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: border / 2 + 'px'
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     animating: false
                 }, this);
             }
             else {
                 let border = node.offsetHeight - node.clientHeight;
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: border / 2 + 'px'
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     closed: false
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: border / 2 + node.scrollHeight + 'px'
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     animating: false
                 }, this);
             }

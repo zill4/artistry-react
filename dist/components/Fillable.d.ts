@@ -4,6 +4,7 @@ export interface IFillableProps {
     className?: string;
     filled?: boolean;
     card?: boolean;
+    children?: React.ReactNode;
 }
 export interface IFillableState {
     filled?: boolean;
@@ -21,5 +22,5 @@ export default class Fillable extends React.Component<IFillableProps, IFillableS
     constructor(props?: IFillableProps);
     componentWillReceiveProps(nextProps: IFillableState): Promise<void>;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

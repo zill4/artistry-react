@@ -18,5 +18,5 @@ export default class Calendar extends React.Component<ICalendarProps, any> {
     getDays(year: number, month: number): Date[];
     getWeeks(year: number, month: number): Date[][];
     componentWillReceiveProps(nextProps: ICalendarProps): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

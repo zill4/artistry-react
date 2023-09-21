@@ -56,8 +56,8 @@ class Drawer extends React.Component {
                 }
                 this.updateModalRoot();
                 BodyScroll_1.default.lock(true);
-                await PromiseUtil_1.waitAnimation();
-                await PromiseUtil_1.waitAnimation();
+                await (0, PromiseUtil_1.waitAnimation)();
+                await (0, PromiseUtil_1.waitAnimation)();
                 this.setState({
                     open: this.props.open
                 });
@@ -115,7 +115,7 @@ class Drawer extends React.Component {
         }
         let innerClassNames = ['drawer-content'];
         if (this.props.grid) {
-            Grid_1.gridConfig(innerClassNames, this.props);
+            (0, Grid_1.gridConfig)(innerClassNames, this.props);
         }
         return ReactDOM.createPortal((React.createElement("div", { className: classNames.join(' '), id: id, onTransitionEnd: this.transitionEnd },
             React.createElement("div", { className: "drawer-background", onScroll: this.onScroll },

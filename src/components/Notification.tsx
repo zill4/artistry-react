@@ -13,6 +13,7 @@ export interface INotificationProps extends INotification {
     allowDelay?: boolean;
     onClick?: (event: React.MouseEvent<HTMLElement>) => any;
     onClose?: () => any;
+    children?: React.ReactNode;
 }
 
 export interface INotificationState {

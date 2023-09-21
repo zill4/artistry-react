@@ -5,5 +5,5 @@ export interface IThumbnailProps {
     src?: string;
 }
 export default class Thumbnail extends React.Component<IThumbnailProps, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

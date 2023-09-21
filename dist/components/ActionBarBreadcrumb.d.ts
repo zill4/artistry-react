@@ -8,6 +8,7 @@ export interface IActionBarBreadcrumbProps {
     className?: string;
     id?: string;
     items?: IActionBarItem[];
+    children?: React.ReactNode;
 }
 export interface IActionBarBreadcrumbState {
     observer?: IntersectionObserver;
@@ -18,10 +19,11 @@ export default class ActionBarBreadcrumb extends React.Component<IActionBarBread
     componentDidMount(): void;
     componentDidUpdate(): void;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }
 export interface IActionBarItemProps {
     observer: IntersectionObserver;
+    children?: React.ReactNode;
 }
 export interface IActionBarItemState {
     hidden?: boolean;
@@ -31,6 +33,6 @@ export declare class ActionBarItem extends React.Component<IActionBarItemProps, 
     state: IActionBarItemState;
     componentDidMount(): void;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }
 export {};

@@ -17,7 +17,7 @@ class Cell extends React.Component {
             classNames.add('offset-' + offset);
         }
         if (align) {
-            Align_1.alignClass(align, classNames);
+            (0, Align_1.alignClass)(align, classNames);
         }
         let fixed = false;
         let style = {};

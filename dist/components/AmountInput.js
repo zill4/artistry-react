@@ -12,7 +12,7 @@ var RoundingType;
     RoundingType[RoundingType["Round"] = 1] = "Round";
     RoundingType[RoundingType["Floor"] = 2] = "Floor";
     RoundingType[RoundingType["Ceiling"] = 3] = "Ceiling";
-})(RoundingType = exports.RoundingType || (exports.RoundingType = {}));
+})(RoundingType || (exports.RoundingType = RoundingType = {}));
 class AmountInput extends React.Component {
     constructor(props) {
         super(props);

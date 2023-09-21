@@ -10,6 +10,7 @@ export interface IMenuBarProps {
     top?: boolean;
     open?: boolean;
     onOpen?: (event: MouseEvent) => boolean | void;
+    children?: React.ReactNode;
 }
 
 export default class MenuBar extends React.Component<IMenuBarProps, any> {

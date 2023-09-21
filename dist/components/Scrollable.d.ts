@@ -1,5 +1,5 @@
 import * as React from 'react';
-export declare type ScrollableType = 'auto' | 'both' | 'none' | 'x' | 'y' | 'xAlways' | 'yAlways' | 'xNever' | 'yNever';
+export type ScrollableType = 'auto' | 'both' | 'none' | 'x' | 'y' | 'xAlways' | 'yAlways' | 'xNever' | 'yNever';
 export declare enum ScrollableTypeEnum {
     auto = "auto",
     both = "both",
@@ -40,6 +40,7 @@ export interface IScrollableProps {
     onBottomExit?: (entries: IntersectionObserverEntry, observer: IntersectionObserver) => any;
     onLeftEnter?: (entries: IntersectionObserverEntry, observer: IntersectionObserver) => any;
     onLeftExit?: (entries: IntersectionObserverEntry, observer: IntersectionObserver) => any;
+    children?: React.ReactNode;
 }
 export default class Scrollable extends React.Component<IScrollableProps, any> {
     root: React.RefObject<HTMLDivElement>;
@@ -55,5 +56,5 @@ export default class Scrollable extends React.Component<IScrollableProps, any> {
     onScroll: (event: React.UIEvent<HTMLDivElement>) => void;
     componentDidMount(): void;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

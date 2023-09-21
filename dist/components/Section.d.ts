@@ -30,5 +30,5 @@ export default class Section extends React.Component<ISectionProps, ISectionStat
     transitionEnd: (event: React.TransitionEvent<HTMLDivElement>) => Promise<void>;
     componentWillReceiveProps(nextProps: ISectionProps): Promise<void>;
     componentWillUnmount(): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

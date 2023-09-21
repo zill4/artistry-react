@@ -9,5 +9,5 @@ export interface IListProps<T> {
     template?: (item: T, index?: number) => any;
 }
 export default class List<T> extends React.Component<IListProps<T>, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

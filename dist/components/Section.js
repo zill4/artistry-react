@@ -44,14 +44,14 @@ class Section extends React.Component {
                 let animating = this.state.animating;
                 if (!animating) {
                     if (this.props.closed) {
-                        await PromiseUtil_1.setState({
+                        await (0, PromiseUtil_1.setState)({
                             height: undefined,
                             running: false,
                             closed: true
                         }, this);
                     }
                     else {
-                        await PromiseUtil_1.setState({
+                        await (0, PromiseUtil_1.setState)({
                             height: undefined,
                             running: false,
                             closed: false
@@ -68,7 +68,7 @@ class Section extends React.Component {
             let content = this.content.current;
             this.runCount++;
             let runCount = this.runCount;
-            await PromiseUtil_1.setState({
+            await (0, PromiseUtil_1.setState)({
                 running: true,
                 animating: true,
             }, this);
@@ -76,43 +76,43 @@ class Section extends React.Component {
                 return;
             }
             if (nextProps.closed) {
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: node.offsetHeight + 'px'
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: header.offsetHeight + 'px'
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     animating: false
                 }, this);
             }
             else {
                 let border = node.offsetHeight - node.clientHeight;
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: border / 2 + header.offsetHeight + content.offsetHeight + 'px'
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     closed: false
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     height: border / 2 + header.offsetHeight + content.offsetHeight + 'px'
                 }, this);
                 if (runCount !== this.runCount) {
                     return;
                 }
-                await PromiseUtil_1.setState({
+                await (0, PromiseUtil_1.setState)({
                     animating: false
                 }, this);
             }
@@ -145,7 +145,7 @@ class Section extends React.Component {
             innerClassNames.push('section-content-relative');
         }
         if (grid) {
-            Grid_1.gridConfig(innerClassNames, this.props);
+            (0, Grid_1.gridConfig)(innerClassNames, this.props);
         }
         return (React.createElement("section", Object.assign({ className: classNames.join(' '), id: id }, props, { style: { height: this.state.height }, onTransitionEnd: this.transitionEnd, ref: this.root }),
             React.createElement("header", { ref: this.header, className: headerSpace ? 'section-title' : undefined },

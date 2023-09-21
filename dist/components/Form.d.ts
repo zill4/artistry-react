@@ -1,5 +1,5 @@
 import * as React from 'react';
-export declare type FormSize = 'none' | 'small' | 'medium' | 'large' | 'x-large' | 'stacked';
+export type FormSize = 'none' | 'small' | 'medium' | 'large' | 'x-large' | 'stacked';
 export interface IFormProps extends React.HTMLProps<HTMLFormElement> {
     screenSize?: FormSize;
     lockable?: boolean;
@@ -10,5 +10,5 @@ export interface IFormProps extends React.HTMLProps<HTMLFormElement> {
 }
 export default class Form extends React.Component<IFormProps, any> {
     onKeyDown(event: KeyboardEvent): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

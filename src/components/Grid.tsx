@@ -9,6 +9,7 @@ export interface IGridProps {
     screenSize?: GridSize;
     fillWidth?: boolean;
     space?: boolean;
+    children?: React.ReactNode;
 }
 
 export default class Grid extends React.Component<IGridProps, any> {

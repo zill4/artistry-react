@@ -10,6 +10,7 @@ export interface ICardCarouselProps extends ICarouselProps {
     cardSpacing?: number;
     carouselSpacing?: number;
     onChangeSize?: (index: number, slideSize?: number, oldSlideSize?: number) => any;
+    children?: React.ReactNode;
 }
 
 export interface ICardCarouselState {

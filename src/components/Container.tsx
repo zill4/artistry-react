@@ -7,6 +7,7 @@ export interface IContainerProps {
     id?: string;
     menuBarTop?: boolean;
     screenSize?: ContainerSize | ContainerSize[];
+    children?: React.ReactNode;
 }
 
 export default class Container extends React.Component<IContainerProps, any>{

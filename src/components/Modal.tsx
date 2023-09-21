@@ -28,6 +28,7 @@ export interface IModalProps extends IGridExternalProps, IScrollableExternalProp
     space?: boolean;
     background?: boolean;
     screenSize?: ModalSize | ModalSize[];
+    children?: React.ReactNode;
 }
 
 export interface IModalState {

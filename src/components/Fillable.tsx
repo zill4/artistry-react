@@ -8,6 +8,7 @@ export interface IFillableProps {
     className?: string;
     filled?: boolean;
     card?: boolean;
+    children?: React.ReactNode;
 }
 
 export interface IFillableState {

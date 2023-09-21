@@ -6,7 +6,8 @@ export interface ICardControlProps {
     label?: boolean;
     width?: number | string;
     stacked?: boolean;
+    children?: React.ReactNode;
 }
 export default class CardControl extends React.Component<ICardControlProps, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

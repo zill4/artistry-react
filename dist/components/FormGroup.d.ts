@@ -11,7 +11,8 @@ export interface IFormGroupProps {
     nonLabel?: boolean;
     inline?: boolean;
     stacked?: boolean;
+    children?: React.ReactNode;
 }
 export default class FormGroup extends React.Component<IFormGroupProps, any> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

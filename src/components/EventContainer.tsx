@@ -5,6 +5,7 @@ export interface IEventContainer {
     preventDefault?: boolean;
     stopPropagation?: boolean;
     block?: boolean;
+    children?: React.ReactNode;
 }
 
 export default class EventContainer extends React.Component<IEventContainer, any> {

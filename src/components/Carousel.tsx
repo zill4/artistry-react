@@ -14,6 +14,7 @@ export interface ICarouselProps {
     fillHeight?: boolean;
     scroll?: ScrollableType;
     space?: boolean;
+    children?: React.ReactNode;
 }
 
 export interface ICarouselState {

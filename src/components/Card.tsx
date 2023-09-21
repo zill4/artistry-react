@@ -39,6 +39,8 @@ export interface ICardProps extends IGridExternalProps, IDisableable {
 
     /** the click event handler */
     onClick?: (event: React.MouseEvent<HTMLDivElement>) => any;
+
+    children?: React.ReactNode;
 }
 
 /** Displays a Card */
