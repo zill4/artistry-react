@@ -10,5 +10,5 @@ export interface IMenuBarLinkProps {
 }
 export default class MenuBarLink extends React.Component<IMenuBarLinkProps, any> {
     onClick: (event: React.MouseEvent<HTMLElement>) => void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

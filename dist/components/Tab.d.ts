@@ -21,5 +21,5 @@ export interface ITabState {
 export default class Tab extends React.Component<ITabProps, ITabState> {
     constructor(props?: ITabProps);
     selectPanel(index: number): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

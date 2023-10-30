@@ -7,5 +7,5 @@ export interface ICardSectionProps {
     children?: React.ReactNode;
 }
 export default class CardSection extends React.Component<ICardSectionProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

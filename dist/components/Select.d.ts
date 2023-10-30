@@ -13,5 +13,5 @@ export interface ISelectProps<T> {
 }
 export default class Select<T, U> extends React.Component<ISelectProps<T>> {
     onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

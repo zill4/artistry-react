@@ -14,5 +14,5 @@ export interface IFormGroupProps {
     children?: React.ReactNode;
 }
 export default class FormGroup extends React.Component<IFormGroupProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

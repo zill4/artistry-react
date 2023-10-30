@@ -22,5 +22,5 @@ export default class Fillable extends React.Component<IFillableProps, IFillableS
     constructor(props?: IFillableProps);
     componentWillReceiveProps(nextProps: IFillableState): Promise<void>;
     componentWillUnmount(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

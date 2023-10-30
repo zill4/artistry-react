@@ -6,5 +6,5 @@ export interface IRowProps {
     children?: React.ReactNode;
 }
 export default class Row extends React.Component<IRowProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

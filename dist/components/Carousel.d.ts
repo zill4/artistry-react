@@ -28,5 +28,5 @@ export default class Carousel extends React.Component<ICarouselProps, ICarouselS
     transitionEnd: (event: React.TransitionEvent<HTMLElement>) => Promise<void>;
     componentWillReceiveProps(nextProps?: ICarouselProps): Promise<void>;
     componentWillUnmount(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

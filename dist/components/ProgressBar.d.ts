@@ -13,5 +13,5 @@ export interface IProgressBarProps {
     children?: React.ReactNode;
 }
 export default class ProgressBar extends React.Component<IProgressBarProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

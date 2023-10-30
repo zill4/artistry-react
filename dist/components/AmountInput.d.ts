@@ -42,5 +42,5 @@ export default class AmountInput extends React.Component<IAmountInputProps, IAmo
     decrement: (event: React.MouseEvent<any>) => void;
     reset: (event: React.MouseEvent<any>) => void;
     componentWillReceiveProps(props: IAmountInputProps): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

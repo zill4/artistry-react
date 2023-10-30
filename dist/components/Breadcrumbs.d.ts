@@ -5,5 +5,5 @@ export interface IBreadcrumbs {
     children?: React.ReactNode;
 }
 export default class Breadcrumbs extends React.Component<IBreadcrumbs, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

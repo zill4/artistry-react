@@ -7,5 +7,5 @@ export interface ICardRowProps {
     children?: React.ReactNode;
 }
 export default class CardRow extends React.Component<ICardRowProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

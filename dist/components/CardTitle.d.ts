@@ -5,5 +5,5 @@ export interface ICardTitleProps {
     children?: React.ReactNode;
 }
 export default class CardTitle extends React.Component<ICardTitleProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

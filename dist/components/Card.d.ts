@@ -20,5 +20,5 @@ export interface ICardProps extends IGridExternalProps, IDisableable {
 }
 export default class Card extends React.Component<ICardProps, any> {
     onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

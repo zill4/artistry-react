@@ -11,5 +11,5 @@ export interface ICellProps {
     children?: React.ReactNode;
 }
 export default class Cell extends React.Component<ICellProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

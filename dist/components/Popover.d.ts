@@ -13,5 +13,5 @@ export interface IPopoverProps {
 }
 export default class Popover extends React.Component<IPopoverProps, any> {
     preventClick(event: React.MouseEvent<HTMLDivElement>): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

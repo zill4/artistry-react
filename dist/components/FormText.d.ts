@@ -10,5 +10,5 @@ export interface IFormTextProps {
     children?: React.ReactNode;
 }
 export default class FormText extends React.Component<IFormTextProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

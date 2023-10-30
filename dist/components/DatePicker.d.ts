@@ -12,5 +12,5 @@ export interface IDatePickerProps {
 export default class DatePicker extends React.Component<IDatePickerProps, any> {
     onSelect: (date: Date) => void;
     onChange: (event: React.FormEvent<HTMLInputElement>) => void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

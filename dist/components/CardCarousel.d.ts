@@ -20,5 +20,5 @@ export default class CardCarousel extends React.Component<ICardCarouselProps, IC
     onChangeSize: (slideSize: number, oldSlideSize: number) => void;
     resizeHandler: () => void;
     componentDidUpdate(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

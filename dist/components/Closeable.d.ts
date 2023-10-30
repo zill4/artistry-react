@@ -18,5 +18,5 @@ export default class Closeable extends React.Component<ICloseableProps, ICloseab
     transitionEnd: (event: React.TransitionEvent<HTMLDivElement>) => Promise<void>;
     componentWillReceiveProps(nextProps: ICloseableProps): Promise<void>;
     componentWillUnmount(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

@@ -28,5 +28,5 @@ export default class MaskedInput<T> extends React.Component<IMaskedInputProps<T>
     onKeyUp: (event: React.KeyboardEvent<HTMLInputElement>) => void;
     getSelection(): ISelection;
     rollback(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

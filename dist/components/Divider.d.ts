@@ -5,5 +5,5 @@ export interface IDividerProps {
     children?: React.ReactNode;
 }
 export default class Divider extends React.Component<IDividerProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

@@ -62,5 +62,5 @@ export default class Search extends React.Component<ISearchProps, ISearchState> 
     componentWillMount(): void;
     componentWillReceiveProps(nextProps: ISearchProps): void;
     componentWillUnmount(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

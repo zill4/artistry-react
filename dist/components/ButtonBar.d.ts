@@ -5,5 +5,5 @@ export interface IButtonBarProps {
     children?: React.ReactNode;
 }
 export default class ButtonBar extends React.Component<IButtonBarProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

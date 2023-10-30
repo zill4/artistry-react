@@ -7,5 +7,5 @@ export interface IFormRowProps {
     children?: React.ReactNode;
 }
 export default class FormRow extends React.Component<IFormRowProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

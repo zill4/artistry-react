@@ -21,5 +21,5 @@ export default class Notification extends React.Component<INotificationProps, IN
     startDecay: () => Promise<void>;
     endDecay: (event: React.AnimationEvent) => Promise<void>;
     stopDecay: () => void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

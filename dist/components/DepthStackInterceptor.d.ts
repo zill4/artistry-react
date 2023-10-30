@@ -10,5 +10,5 @@ export default class DepthStackInterceptor extends React.Component<IDepthStackIn
     onKeyDown: (event: React.KeyboardEvent<HTMLElement>) => void;
     componentDidMount(): void;
     componentWillUnmount(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

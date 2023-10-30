@@ -20,5 +20,5 @@ export default class FileUpload extends React.Component<IFileUploadProps, IFileU
     drop: (event: React.DragEvent<HTMLDivElement>) => void;
     dragEnter: (event: React.DragEvent<HTMLDivElement>) => void;
     dragLeave: (event: React.DragEvent<HTMLDivElement>) => void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

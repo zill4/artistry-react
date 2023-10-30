@@ -9,5 +9,5 @@ export interface IEventContainer {
 export default class EventContainer extends React.Component<IEventContainer, any> {
     eventHandler: (event: React.SyntheticEvent) => void;
     eventsToHash(events: string | string[]): {};
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

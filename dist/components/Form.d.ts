@@ -10,5 +10,5 @@ export interface IFormProps extends React.HTMLProps<HTMLFormElement> {
 }
 export default class Form extends React.Component<IFormProps, any> {
     onKeyDown(event: KeyboardEvent): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

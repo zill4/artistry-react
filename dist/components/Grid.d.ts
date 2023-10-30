@@ -10,7 +10,7 @@ export interface IGridProps {
     children?: React.ReactNode;
 }
 export default class Grid extends React.Component<IGridProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }
 export interface IGridExternalProps {
     grid?: boolean;

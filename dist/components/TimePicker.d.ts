@@ -11,5 +11,5 @@ export default class TimePicker extends React.Component<ITimePickerProps, ITimeP
     onChangeHour: (event: React.ChangeEvent<HTMLSelectElement>) => void;
     onChangeMinute: (event: React.ChangeEvent<HTMLSelectElement>) => void;
     onChangeMeridiem: (event: React.ChangeEvent<HTMLSelectElement>) => void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

@@ -4,5 +4,5 @@ export interface IIconProps {
     name: string;
 }
 export default class Icon extends React.Component<IIconProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

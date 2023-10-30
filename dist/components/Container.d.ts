@@ -8,5 +8,5 @@ export interface IContainerProps {
     children?: React.ReactNode;
 }
 export default class Container extends React.Component<IContainerProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

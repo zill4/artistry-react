@@ -9,5 +9,5 @@ export interface ICardControlProps {
     children?: React.ReactNode;
 }
 export default class CardControl extends React.Component<ICardControlProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

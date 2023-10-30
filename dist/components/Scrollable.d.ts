@@ -56,5 +56,5 @@ export default class Scrollable extends React.Component<IScrollableProps, any> {
     onScroll: (event: React.UIEvent<HTMLDivElement>) => void;
     componentDidMount(): void;
     componentWillUnmount(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

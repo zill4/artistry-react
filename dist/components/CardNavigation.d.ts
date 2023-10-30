@@ -6,5 +6,5 @@ export interface ICardNavigationProps {
     children?: React.ReactNode;
 }
 export default class CardNavigation extends React.Component<ICardNavigationProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

@@ -19,7 +19,7 @@ export default class ActionBarBreadcrumb extends React.Component<IActionBarBread
     componentDidMount(): void;
     componentDidUpdate(): void;
     componentWillUnmount(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }
 export interface IActionBarItemProps {
     observer: IntersectionObserver;
@@ -33,6 +33,6 @@ export declare class ActionBarItem extends React.Component<IActionBarItemProps, 
     state: IActionBarItemState;
     componentDidMount(): void;
     componentWillUnmount(): void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }
 export {};

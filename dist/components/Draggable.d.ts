@@ -6,5 +6,5 @@ export default class Draggable extends React.Component<IDraggableProps, any> {
     dragging: boolean;
     onDrag: () => void;
     onDragEnd: () => void;
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

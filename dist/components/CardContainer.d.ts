@@ -8,5 +8,5 @@ export interface ICardContainerProps {
     children?: React.ReactNode;
 }
 export default class CardContainer extends React.Component<ICardContainerProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }

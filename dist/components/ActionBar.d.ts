@@ -8,5 +8,5 @@ export interface IActionBarProps {
     children?: React.ReactNode;
 }
 export default class ActionBar extends React.Component<IActionBarProps, any> {
-    render(): React.JSX.Element;
+    render(): JSX.Element;
 }
